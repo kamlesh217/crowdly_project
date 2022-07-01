@@ -1,0 +1,295 @@
+body{
+  font-family: system-ui; 
+}
+.main{
+    border: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    display: grid;
+    background-color:#ffffff;
+    width: max-content;
+    border-radius: 20px;    
+    padding: 35px;
+    box-shadow: 0 4px 12pxrgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+}
+.login_div .header_item_1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.login_div  .header_item_2{
+    font-size:14px;
+}
+
+.input_div_item{
+    margin-top: 20px;
+}
+.input_div  input{
+    background-color: transparent;
+    border: .5px solid black;
+    border-radius: 3px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 15px;
+    width: -webkit-fill-available;
+}
+
+.auth_button{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(25, 103, 210);
+    height: 45px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    width:-webkit-fill-available;
+}
+
+.auth_button:hover{
+    text-decoration: underline;
+}
+
+
+#button_2{
+    border: 1.5px solid rgb(123 122 122);
+    border-radius: 20px;
+    background-color: transparent;
+    height: 45px;
+    font-weight: 600;
+    color:rgb(123 122 122);
+    font-size: 14px;
+    width:-webkit-fill-available;
+}
+
+#button_2:hover{
+    text-decoration: underline;
+}
+
+
+
+#auth_link{
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+#log_img{
+
+    width:100px;
+}
+
+.logo_div{
+    margin-top:1%;
+    margin-left:4%;
+   
+}
+
+#join_btn{
+    border: 1.5px solid;
+        color: rgb(25, 103, 210);
+        border-radius: 20px;
+        background: transparent;
+        width: 110px;
+        font-size: 14px;
+        font-weight: 600;
+        height: 38px;
+        
+}
+
+
+
+
+#sign_in_btn{
+    border: none;
+        background: transparent;
+        color: rgb(123 122 122);
+        font-size: 14px;
+        margin-right:5px;
+        border-radius: 20px;
+        width: 100px;
+        height: 38px;
+        font-weight: 600;
+}
+
+#sign_in_btn:hover {
+    background: rgb(243, 243, 243);
+    text-decoration: underline;
+  }
+
+  #join_btn:hover {
+    background: rgb(243, 243, 243);
+    text-decoration: underline;
+
+  }
+
+  .back_btn{
+    color:rgb(123 122 122);
+    border: none;
+    height: 38px;
+    font-weight: 600;
+    width: 110px;
+    border-radius: 20px;
+    background: transparent;
+  }
+
+  .back_btn:hover {
+    background: rgb(243, 243, 243);
+    text-decoration: underline;
+
+  }
+
+  .box_header{
+    text-align: left;
+  }
+
+  #forgot_btn{
+    margin-top: 8px;
+    color:#0a66c2;
+    text-align:left;
+    
+  }
+
+  #forgot_btn a{
+    text-decoration: none;
+    font-size:16px;
+  }
+
+  #forgot_btn:hover a{
+    text-decoration: underline;
+  }
+
+  #register_sign_in{
+    text-align: center;
+  }
+
+  #register_sign_in span{
+    font-size: 16px;
+  }
+
+  #register_sign_in a{
+    text-decoration: none;
+     color:rgb(25, 103, 210);
+      font-weight:bold;
+  }
+
+  #register_sign_in a:hover{
+    text-decoration: underline;
+  }
+
+
+  .body_div{
+    padding-top: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .body_left, .body_right{
+    margin-left: 8%;
+ 
+  }
+
+
+  .body_right{
+    padding-top: 2%;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .body_right img{
+    width: 100%;
+   
+  }
+  .left_body_heading{
+    font-size: 63px;
+    font-weight: 200;
+    color: rgb(128 107 78);
+  }
+
+  #home_sign_button{
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(25, 103, 210);
+    height: 50px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    width:-webkit-fill-available;
+}
+
+#home_sign_button:hover{
+    text-decoration: underline;
+}
+
+.Forgot_first_div{
+  width:300px;
+}
+
+.Forgot_second_div{
+  width:300px;
+  display: none;
+}
+
+.Forgot_first_div .header_item_1{
+  font-size: 21px;
+
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.Forgot_first_div  .header_item_2{
+
+  font-size:14px;
+}
+
+.Forgot_second_div .header_item_1{
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.Forgot_second_div  .header_item_2{
+  font-size:14px;
+}
+
+.input_div .resend_code_div{
+  text-align: left;
+  margin-top: 6px;
+  font-weight: 500;
+
+}
+
+.input_div .resend_code_div a{
+text-decoration: none;
+color: rgb(25, 103, 210);
+}
+
+.Forgot_second_div .box_header button{
+  border: none;
+  width: 60px;
+  border-radius: 15px;
+  background: transparent;
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+.Forgot_second_div .box_header button:hover{
+  background:rgb(195, 220, 255);
+}
+
+.new_phone_resend_div {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.new_phone_resend_div a button{
+  border: none;
+  border-radius: 15px;
+  background: transparent;
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+.input_error{
+  text-align: left;
+  color: red;
+  font-size: smaller;
+}

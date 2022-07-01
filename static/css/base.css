@@ -1,0 +1,117 @@
+#e_life_logo{
+    margin-left: 15px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: rgb(231, 49, 49);
+    font-family: 'Lucida Handwriting', 'Cursive' ;
+    text-decoration: underline;
+}
+
+#e_life_logo span{
+    color:#ffff;
+}
+
+.nav_left_item{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    
+}
+#nav_right_item{
+    float: right;
+}
+
+.search_box_div input{
+    width: -webkit-fill-available;
+    border: 1.5px solid rgba(255, 255, 255, .5);
+    color: #004085;
+    border-radius: 15px;
+    background-color: #3097D1;
+    text-align:start;
+    font-size: 15px;
+    height: 35px;
+    padding-left: 10px; 
+}
+
+#navbar{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color:#3097D1;
+<<<<<<< Updated upstream
+    height:65px;
+    align-items: center;
+    padding: 8px;
+=======
+     height:65px;
+        align-items: center;
+        padding: 8px;
+}
+.navbar-nav li{
+    margin-left: 15px;
+    font-size: 20px;
+>>>>>>> Stashed changes
+}
+
+.nav_right_item .Profile_name{
+    color:#ffff;
+    font-weight:500;
+    float: left;
+    
+}
+
+.navbar_icon{
+    width: 22px;
+    height: 22px;
+
+}
+
+#navbar_profile_img{
+    width: 40px;
+    height: 40px;
+}
+
+.not_number{
+    text-align: center;
+    position: absolute;
+    font-size: 8px;
+    color:#fff;
+    border: none;
+    border-radius: 40%;
+    width: 18px;
+    background:#004085;}
+
+    
+#profile_avtar_div{
+    z-index: 99;
+}
+
+#profile_avtar_div #profile_dropdown_div{
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    right: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 12pxrgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+    
+}
+
+#profile_avtar_div ul, li, a{
+    list-style: none;
+    margin-left: 5px;
+}
+
+#profile_avtar_div li a{
+    color: black;
+    font-size: 13px;
+}
+
+#profile_avtar_div li a:hover{
+    color: #3097D1;
+}
+
+#navbarDropdown{
+    color: #000000;
+}

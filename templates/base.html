@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<link rel="stylesheet" href="{% static 'css/base.css'%}">
+<link rel="stylesheet" href="{% static 'css/cloudfare.css'%}">
+{% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> {% endcomment %}
+<!--    
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css'%}">
+<link rel="stylesheet" href="{% static 'font-awesome.css'%}">
+-->
+<script type="text/javascript" src="{% static 'js/lightbox-plus-jquery.min.js'%}"></script>
+
+<!------------------LIght BOx for Gallery-------------->
+<title>Application-1</title>
+</head>
+<body>
+
+    <!-------------------------------NAvigation Starts------------------>
+{% comment %} <div style='position: fixed;top: 0;width: 100%;z-index: 99;'>
+    <nav class="navbar-expand-md navbar-dark" id='navbar'>
+        <div class="nav_left_item">
+            <div class="logo_div">
+                <a href="/" class="navbar-brand"><img style='width: 105px; height: 37px; border-radius: 15px;'  id='log_img' src="{% static 'img/e.png'%}" ></a>
+            </div>
+            <div class='search_box_div'>
+                    <input style="width" type="text"id="navbar_search" placeholder="Search...">
+            </div>
+        </div>
+        
+        <div class='nav_right_item'>
+            <div class="navbar-collapse" id='nav_right_item'  >
+                <ul class="navbar-nav text-capitalize">
+                    <li > <img class='navbar_icon' src="{% static 'img/chat.png'%}" alt="" >
+                        <span class='not_number'>34  </span>
+                    </li>
+
+                    <li >
+                        <img  class='navbar_icon' src="{% static 'img/notification.png'%}" alt="" >
+                        <span class='not_number'>34</span>
+                    </li>
+
+                    <li style="margin-left:20px;">
+                        <a style='color:rgba(255, 255, 255, .5);' href="#modalview" data-toggle="modal">Home</a>
+                    </li>
+
+                    <li>
+                        <a style='color:rgba(255, 255, 255, .5);' href="notification.html">Explore</a>
+                    </li>
+
+                    <li> 
+                        <span class='Profile_name'>{{request.session.profile_name}}</span>
+                    </li>
+                </ul>
+                <div id='profile_avtar_div'>
+                    <img   id='navbar_profile_img' src="{% static 'img/avatar-dhg.png'%}" alt="" class="rounded-circle ml-3 d-none d-md-block">
+                    <div id='profile_dropdown_div'>
+                        <li><a href=''>My Account</a></li>
+                        <hr style='margin-top: 2px; margin-bottom: 2px;'>
+                        <li><a href=''>Orders</a></li>
+                        <hr style='margin-top: 2px; margin-bottom: 2px;'>
+                        <li><a href='/logout'>Log out</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div> {% endcomment %}
+
+<nav class="navbar navbar-expand-lg bg-light" style='    background-color: #112c47 !important; --bs-navbar-padding-y: 0rem;'>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span style='    color: #fff;
+        font-size: 30px;'>C</span><span style='    color: dimgrey;
+        font-size: 25px;
+        text-decoration: underline;'>rowdly</span></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div style='width:-webkit-fill-available;'>
+        <form class="d-flex" role="search" >
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><img class='navbar_icon' src="{% static 'img/chat.png'%}" alt="" >
+                <span class='not_number'>34  </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img  class='navbar_icon' src="{% static 'img/notification.png'%}" alt="" >
+                <span class='not_number'>34</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hello, kumar
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/logout">Log Out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <img   id='navbar_profile_img' src="{% static 'img/avatar-dhg.png'%}" alt="" class="rounded-circle  d-none d-md-block">
+          </li>
+        </ul>
+    </div>
+        
+      </div>
+    </div>
+  </nav>
+    {% block body %}
+        {% endblock %}
+<script>
+        lightbox.option({
+          
+        })
+    </script>
+    <script src=>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/base.js'%}"></script>
+
+</body>
+</html>

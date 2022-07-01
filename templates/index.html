@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <!-------------------------------------------Start Grids layout for lg-xl-3 columns and (xs-lg 1 columns)---------------------------------->
+<div class="container">
+    <div class="row">
+        <!----------------------------left columns  start-->
+        <div class="col-12 col-lg-3">
+            <div class="left-column">
+                <div class="card card-left1 mb-4" >
+                    <img src="{% static 'img/photo-1455448972184-de647495d428.jpg'%}" alt="" class="card-img-top img-fluid">
+                    <div class="card-body text-center ">
+                        <img src="{% static 'img/profile.png'%}" alt="img" width="120px" height="120px" class="rounded-circle mt-n5">
+                        <h5 class="card-title">Kamlesh Suthar</h5>
+                        <p class="card-text text-justify mb-2">I wish i was a little bit taller, wish i was a baller, wish i had a girl… also.</p>
+                        <ul class="list-unstyled nav justify-content-center">
+                            <a href="#" class="text-dark text-decoration-none"> <li class="nav-item">Friends <br> <strong>12M</strong></li></a>
+                            <a href="#" class="text-dark text-decoration-none"> <li class="nav-item">Enimes <br> <strong>1</strong></li></a> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="card shadow-sm card-left2 mb-4">
+                    <div class="card-body">
+                            <h5 class="mb-3 card-title">About <small><a href="#" class="ml-1">Edit</a></small></h5>
+                            <p class="card-text"> <i class="fas fa-calendar-week mr-2"></i> Went to <a href="#" class="text-decoration-none"> Udaipur</a></p>
+                            <p class="card-text"> <i class="fas fa-user-friends mr-2"></i> Become a friend with <a href="#" class="text-decoration-none">rakesh</a></p>
+                            <p class="card-text"> <i class="far fa-building mr-2"></i> Work at <a href="#" class="text-decoration-none">ollosoft</a></p>
+                            <p class="card-text"> <i class="fas fa-home mr-2"></i> Live in <a href="#" class="text-decoration-none">India</a></p>
+                            <p class="card-text"> <i class="fas fa-map-marker mr-2"></i> From <a href="#" class="text-decoration-none">Pali, RJ</a></p>
+                    </div>
+                </div>
+                <div class="card shadow-sm card-left3 mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Photos<small class="ml-2"><a href="#">.Edit </a></small></h5>
+                        <div class="row">
+                            <div class="col-6 p-1">
+                                <a href="{% static 'img/left1.'%}" data-lightbox="id" ><img src="{% static 'img/left1.jpg'%}" alt="img" class="img-fluid my-2"></a>  
+                                <a href="{% static 'img/left2.jpg'%}" data-lightbox="id"><img src="{% static 'img/left2.jpg'%}" alt="img" class="img-fluid my-2"></a>
+                                <a href="{% static 'img/left3.jpg'%}" data-lightbox="id"><img src="{% static 'img/left3.jpg'%}" alt="img" class="img-fluid my-2"></a>
+                            </div>
+                            <div class="col-6 p-1">
+                                    <a href="{% static 'img/left4.jpg'%}" data-lightbox="id"><img src="{% static 'img/left4.jpg'%}" alt="img" class="img-fluid my-2"></a>
+                                    <a href="{% static 'img/left5.jpg'%}" data-lightbox="id"><img src="{% static 'img/left5.jpg'%}" alt="img" class="img-fluid my-2"></a>
+                                    <a href="{% static 'img/left6.jpg'%}" data-lightbox="id"><img src="{% static 'img/left6.jpg'%}" alt="img" class="img-fluid my-2"></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------Ends Left columns-->
+        <!---------------------------------------Middle columns  start---------------->
+        <div class="col-12 col-lg-6" >
+            <div class="middle-column">
+                <div class="card" >
+                    <div class="card-header bg-transparent">
+                        <form class="form-inline">
+                            <div class="input-group w-100">
+                                <input type="text" name="message" id="message" placeholder="Message" class="form-control form-control-md">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        <div class="media">
+                            <img src="{% static 'img/profile.png'%}" alt="img" width="55px" height="55px" class="rounded-circle mr-3">
+                            <div class="media-body">
+                                <h5>ravi agarwal</h5>
+                                <p class="card-text text-justify">The Church of St. Peter and St. Paul is a Roman Catholic church located in the neighbourhood of Antakalnis in Vilnius, Lithuania. Its interior has masterful compositions of some two thousand stucco figures by Pietro Perti and ornamentation by Giovanni Maria Galli da Bibiena, and is unique in Europe.</p>
+                                <div class="row no-gutters mb-3">
+                                    <div class="col-6 p-1 text-center">
+                                        <img src="{% static 'img/adventure-alps-clouds-2259810.jpg'%}" alt="" class="img-fluid mb-2">
+                                        <img src="{% static 'img/aerial-view-architectural-design-buildings-2228123.jpg'%}" alt="" class="img-fluid">
+                                    </div>
+                                <div class="col-6 p-1 text-center">
+                                    <img src="{% static 'img/celebration-colored-smoke-dark-2297472.jpg'%}" alt="" class="img-fluid mb-2">
+                                    <img src="{% static 'img/bodybuilding-exercise-fitness-2294361.jpg'%}" alt=""class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="media mb-3">
+                                <img src="{% static 'img/profile.png'%}" alt="img" width="45px" height="45px" class="rounded-circle mr-2">
+                                <div class="media-body">
+                                    <p class="card-text text-justify">The church is dedicated to Saint Peter and Saint Paul, whose feast day is celebrated on 29 June. This photograph of the interior depicts the church's chancel with the main altar.</p>
+                                </div>
+                            </div>   
+                            <div class="media">
+                                <img src="{% static 'img/profile.png'%}" alt="img" width="45px" height="45px" class="rounded-circle mr-2">
+                                <div class="media-body">
+                                    <p class="card-text text-justify">The large central painting by Franciszek Smuglewicz depicts the emotional final parting of Peter and Paul. A life-sized sculpture of Jesus, known as Jesus of Antakalnis, is visible in a niche on the left of the image.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <small>5min</small>
+                    </div>
+                </div>                          
+                <hr>
+
+                <div class="card-body">
+                    <div class="media">
+                        <img src="{% static 'img/profile.png.jpg'%}" alt="img" width="55px" height="55px" class="rounded-circle mr-3">
+                        <div class="media-body">
+                            <h5>aviral </h5>
+                            <p class="text-justify"> Bannister won first prize for his art at the 1876 Philadelphia Centennial Exhibition and was a founding member of the Providence Art Club and the Rhode Island School of 
+                                Design. His style and pastoral subjects were influenced by Jean-François Millet and the French Barbizon school. He also looked to the seaside for inspiration for his often experimental and Idealistic use of color and atmosphere.</p>
+                        </div>
+                        <small>14 min</small>
+                    </div>
+                </div>
+                <hr>
+                <div class="card-body">
+                    <div class="media">
+                        <img src="{% static 'img/profile.png' %}" alt="img" width="55px" height="55px" class="rounded-circle mr-3">
+                        <div class="media-body">
+                            <h5>Mark Otto</h5>
+                            <p class="text-justify">He worked as a photographer and portraitist before progressing to landscapes. His style fell out of favor later in his life; he and Christiana moved out of College Hill in Providence to Boston and then a smaller house in Providence. He was overlooked after his death in 1901, until the National Museum of African Art and others returned him to national attention in the 1960s and 1970s.</p>
+                            <a href="img/mid5.jpg" data-lightbox="id"><img src="{% static 'img/mid5.jpg' %}" alt="" class="img-fluid shadow-sm img-thumbnail"></a>   
+                        </div>
+                        <small class="text-muted">10 min</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br><br> <br> <br>
+    <!------------------------Middle column Ends---------------->
+
+    <!---------------------------Statrs Right Columns------------------>
+    <div class="col-12 col-lg-3">
+        <div class="right-column">
+            <div class="card shadow-sm mb-4" >
+                <div class="card-body">
+                    <h6 class="card-title">Sponsored</h6>
+                    <img src="{% static 'img/right1.jpg' %}" alt="card-img" class="card-img mb-3">
+                    <p class="card-text text-justify"> <span class="h6">It might be time to visit Iceland.</span> Iceland is so chill, and everything looks cool here. Also, we heard the people are pretty nice.  What are you waiting for?</p>
+                    <a href="#" class="btn btn-outline-info card-link btn-sm">Buy a ticket</a>
+                </div>
+            </div>
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                        <h6 class="card-title ">Likes <a href="#" class="ml-1"><small>.View All</small> </a> </h6>
+                        <div class="row no-gutters d-none d-lg-flex">
+                            <div class="col-6 p-1">
+                                <img src="{% static 'img/profile.png' %}" alt="img" width="80px" height="80px" class="rounded-circle mb-4">
+                                <img src="{% static 'img/profile.png' %}" alt="img" width="80px" height="80px" class="rounded-circle">
+                            </div>
+                            <div class="col-6 p-1 text-left">
+                                <h6>krishnapal</h6>
+                                <a href="#" class="btn btn-outline-info btn-sm mb-3"><i class="fas fa-user-friends"></i>Follow </a>
+                                <h6>ashok suthar</h6>
+                                <a href="#" class="btn btn-outline-info  btn-sm"><i class="fas fa-user-friends"></i>Follow </a>
+                            </div>
+                        </div>
+                </div>
+                <div class="card-footer">
+                    <p class="lead" style="font-size:18px;">Kamlesh really likes these nerds, no one knows why though.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <p>&copy; 2022 ollosoft
+                        <a href="#">About</a>
+                        <a href="#">Help</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Ads </a>
+                        <a href="#">Info</a>
+                        <a href="#">Brand</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Status</a>
+                        <a href="#">Apps</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Advertise</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

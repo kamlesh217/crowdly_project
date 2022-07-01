@@ -1,0 +1,76 @@
+{% extends 'user_base.html' %}
+{% load static %}
+
+
+{% block title %} E Life: Log In or Sign Up{% endblock %}
+
+{% block body %}
+<div style="display:grid;  grid-template-columns: 50% 50%;">
+    <div style='margin-left:25px;'>
+        <a href='/'>
+        <img id='log_img'  src="{% static 'img/e.png'%}" >
+        </a>
+    </div>
+    <div style='text-align: end; margin-right:10%;'>
+        <a style='text-decoration: none;' href="/login">
+            <button id='sign_in_btn' >Sing in</button>
+        </a>
+        <a style='text-decoration: none;' href="/register">
+            <button id='join_btn' >Join now</button>
+        </a>
+    </div>
+</div>
+<div class='body_div'>
+    <div class='body_left'>
+        <div>
+            <span class='left_body_heading'>
+                Welcome to our heart! Let you open the door.
+            </span>
+        </div>
+            <div class="input_div" style='width:70%;'>
+                <form action='/' method='post'>
+                    {% csrf_token %}
+                    <div class="input_div_item">
+                        <input id='home_username' type="email" placeholder="Email..." name='login_username' >
+                    </div>
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if "not_exist" in message.tags %}
+                                <div id='username_error_div' class='input_error'>
+                                    <span id='home_username_error' >{{message}}</span>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    <div class="input_div_item">
+                        <input id='home_password' type="password" placeholder="Password" name='login_password' >
+                    </div>
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if "password_error" in message.tags %}
+                                <div id='password_error_div' class='input_error'>
+                                <span id='home_password_error'>{{message}}</span>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    <div class="input_div_item">
+                        <button  type='submit' id="home_sign_button">Sing in</button>
+                    </div>
+                </form>
+                    <div style='margin-top: 10px; text-align:center; margin-bottom: 10px;' >
+                        <span style='color:rgb(123 122 122);' >or<span>
+                    </div>
+                    <div>
+                        <a style='text-decoration: none;' href="/register">
+                        <button id="button_2">Join Now</button>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    <div class='body_right'>
+        <img src="{% static 'img/home.jpg'%}" >
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'user_base.html' %}
+{% load static %}
+
+
+{% block title %}Sign Up | E Life {% endblock %}
+
+{% block body %}
+<div style='margin-left:20px;'>
+    <a href='/'>
+        <img  id='log_img' src="{% static 'img/e.png'%}" >
+    </a>
+</div>
+<div style='text-align: end;font-weight: 500; padding-right: 20px; color: rgb(25, 103, 210);;'>
+    {% if messages %}
+                    {% for message in messages %}
+                    {% if "error" in message.tags %}
+                    <span>* {{ message }}</span>
+                    {% endif %}
+                    {% endfor %}
+                {% endif %}
+</div>
+<center>
+    <div class="main">
+        <div class='login_div' style='width:400px;'>
+            <div class="box_header">
+                <div class="header_item_1">
+                    <span>Join Now </span>
+                </div>
+                <div class="header_item_2">
+                    <span >Make the most of your Social life</span>
+                </div>
+            </div>
+            <div class="input_div">
+                <form action='/register/' method='post'>
+                    {% csrf_token %}
+
+                    <div class="input_div_item">
+                        <input type="text" id='register_fullname' placeholder="Full Name" name="register_fullname" >
+                    </div>
+
+                    <div class="input_div_item">
+                        <input id='register_username' type='email' placeholder="Email" name="register_username" >
+                    </div>
+                    {% if messages %}
+                        {% for message in messages %}
+                            {% if "email_already" in message.tags or 'invalid_email' in message.tags %}
+                                <div class='input_error'>
+                                    <span >
+                                        {{message}}
+                                    </span>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                    <div class="input_div_item">
+                        <input type="password" minlength="6" id='register_password' placeholder="Password" name="register_password" >
+                    </div>
+                    <div class="input_div_item">
+                        <button id='register_submit' type='submit' class="auth_button">Join</button>
+                    </div>
+                </form>
+                <div style='margin-top: 10px; text-align:center; margin-bottom: 10px;' >
+                    <span style='color:rgb(123 122 122);' >or<span>
+                </div>
+                <div id='register_sign_in'>
+                    <span >Already on <u>E life</u> ?
+                    <a href="/login"> Sign in</a><span>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+
+    {% endblock %}
